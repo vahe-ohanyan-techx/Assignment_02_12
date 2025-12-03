@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Page</title>
+</head>
+<body>
+    <h2>Standard Image</h2>
+    <img src="https://www.shutterstock.com/image-photo/lake-tahoe-east-shore-beach-600nw-1038472942.jpg" alt="Standard Image" title="a Standard type of image">
+    
+        <h2>Responsive Images</h2>
+        <picture>
+            <source media="(max-width: 770px)"
+            srcset="assets/istockphoto-1419410282-612x612.jpg">
+            
+            <source media="(max-width: 768px)" 
+            srcset="assets/free-nature-images.jpg">
+            
+            <img src="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg" height="400" width="500" title="Lake Image">
+        </picture>
+        
+        <div>
+        <video controls> <source src="https://youtu.be/-kenx1rQyZo?si=1RHsXskmVjz041MI"></video>
+        
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/Bq4rmeIvJbs"
+            title="YouTube video player"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <!-- Google Map -->
+    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.020224828907!2d-122.41941528513219!3d37.77492977975957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064dfdf123d%3A0xa1e5b12f14fb0e!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v0000000000"
+             width="500"
+             height="300" 
+             id="googleMap" 
+             frameborder="0">
+    </iframe>
+
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
+</body>
+</html>

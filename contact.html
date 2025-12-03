@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <form action="contact" style="display: grid;">
+        <label for="Text" >
+            <input type="text" placeholder="Enter Your Name">
+        </label>
+        <label for="Email">
+            <input type="email" placeholder="Enter Your Email">
+        </label>
+        <label for="Age">
+            <input type="number" placeholder="Enter Your Age" minlength="1" maxlength="120">
+        </label>
+        <textarea name="userMessage" id=""></textarea>
+        <select name="" id="">
+            <option value="General">General</option>
+            <option value="Support">Support</option>
+            <option value="Feedback">Feedback</option>
+        </select>
+        <div>
+            <input type="radio" value="email">
+            <label for="contactEmail">Email</label>
+        </div>
+        <div>
+            <input type="radio" value="Phone"   >
+            <label for="contactWithPhone">Phone Contact</label>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
