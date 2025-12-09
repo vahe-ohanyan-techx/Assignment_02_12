@@ -7,29 +7,27 @@
 </head>
 <body>
     <form action="contact" style="display: grid;">
-        <label for="Text" >
-            <input type="text" placeholder="Enter Your Name">
-        </label>
-        <label for="Email">
-            <input type="email" placeholder="Enter Your Email">
-        </label>
-        <label for="Age">
+        <label for="Text" >Name:</label>
+            <input type="text" placeholder="Enter Your Name" required>
+        <label for="Email">Email:</label>
+            <input type="email" placeholder="Enter Your Email" required>
+        <label for="Age">Age:</label>
             <input type="number" placeholder="Enter Your Age" minlength="1" maxlength="120">
-        </label>
-        <textarea name="userMessage" id=""></textarea>
-        <select name="" id="">
+        <label for="Message">Message:</label>
+        <textarea name="userMessage" id="message" required></textarea>
+        <label for="topic">Select Topic:</label>
+        <select id="topic" name="topic">
             <option value="General">General</option>
             <option value="Support">Support</option>
             <option value="Feedback">Feedback</option>
         </select>
-        <div>
-            <input type="radio" value="email">
+        <fieldset>
+            <legend>Preferred Contact Method</legend>
+            <input type="radio" id="contactEmail" name="contactMethod" value="Email">
             <label for="contactEmail">Email</label>
-        </div>
-        <div>
-            <input type="radio" value="Phone"   >
-            <label for="contactWithPhone">Phone Contact</label>
-        </div>
+            <input type="radio" id="contactPhone" name="contactMethod" value="Phone">
+            <label for="contactPhone">Phone Contact</label>
+        </fieldset>
         <button type="submit">Submit</button>
     </form>
 </body>
