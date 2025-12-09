@@ -8,16 +8,17 @@
 <body>
     <form action="contact" style="display: grid;">
         <label for="Text" >
-            <input type="text" placeholder="Enter Your Name">
+            <input type="text" placeholder="Enter Your Name" required>
         </label>
         <label for="Email">
-            <input type="email" placeholder="Enter Your Email">
+            <input type="email" placeholder="Enter Your Email" required>
         </label>
         <label for="Age">
             <input type="number" placeholder="Enter Your Age" minlength="1" maxlength="120">
         </label>
-        <textarea name="userMessage" id=""></textarea>
-        <select name="" id="">
+        
+        <textarea name="userMessage" id="" required></textarea>
+        <select name="topic choice" id="">
             <option value="General">General</option>
             <option value="Support">Support</option>
             <option value="Feedback">Feedback</option>
